@@ -1,0 +1,17 @@
+---
+title: Le Wagon - Middleman - Team
+---
+
+<%= partial "layouts/banner" %>
+<div>
+  <ul class="list-inline text-center">
+    <% ["Voxoff", " Alex H"].each do |name| %>
+    <li>
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{name}", class: "avatar" %>
+      <h3>
+        <%= name.capitalize %>
+      </h3>
+    </li>
+    <% end %>
+  </ul>
+</div>
